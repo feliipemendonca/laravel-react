@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="app"></div>
-
+https://blog.pusher.com/react-laravel-application/
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
