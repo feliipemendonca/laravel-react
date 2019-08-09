@@ -1,14 +1,17 @@
 require("./bootstrap");
-require("./components/Example");
+require("./components/App");
 
-import React from "react";
-import { render } from "react-dom";
-import { Router, Route, browserHistory } from "react-router";
+// import React from 'react';
+// import { render } from 'react-dom';
+// import { Router, Route, browserHistory } from 'react-router';
 
-import Example from "./components/Example";
+// import Master from './components/Master';
+// import CreateItem from './components/CreateItem';
 
-if (document.getElementById("example")) {
-    render(<Example />, document.getElementById("example"));
-}
-
-console.log("Testando o React com laravel");
+// render(
+//     <Router history={browserHistory}>
+//         <Route path="/" component={Master} >
+//             <Route path="/add-item" component={CreateItem} />
+//         </Route>
+//     </Router>,
+//     document.getElementById('example'));
