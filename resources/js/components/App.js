@@ -1,22 +1,25 @@
-import React, { Component } from "react";
-import ReactDom from "react-dom";
-import { BrowserRoute, Route, Switch } from "react-router-dom";
+import React, {Component} from "react";
+import ReactDOM from "react-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Header from "./Header";
-import ProjectList from "./ProjectList";
-
-class App extends Component() {
+import NewProject from "./NewProject";
+import ProjectsList from "./ProjectsList";
+import SingleProject from "./SingleProject";
+class App extends Component {
     render() {
         return (
-            <BrowserRoute>
+            <BrowserRouter>
                 <div>
                     <Header />
                     <Switch>
-                        <Route exact path="/" component={ProjectList} />
+                        <Route exact path="/" component={ProjectsList} />
+                        <Route path="/create" component={NewProject} />
+                        <Route path="/:id" component={SingleProject} />
                     </Switch>
                 </div>
-            </BrowserRoute>
+            </BrowserRouter>
         );
     }
 }
 
-ReactDom.render(<App />, documente.getElementId("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
